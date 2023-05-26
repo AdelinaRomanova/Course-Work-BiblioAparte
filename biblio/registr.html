@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Библио Апарте</title>
+</head>
+<body>
+    <header class="container">
+        <div class="header-box">
+            <div class="header_title">БиблиоАпарте</div>
+            <div class="search">
+                <form>
+                    <input type="text" placeholder="Поиск">
+                    <button type="submit"></button>
+                  </form>
+            </div>
+            <button class="btn_auth">Войти</button>
+        </div>
+       
+    </header>
+
+    <main>
+        <div class="form">
+            <form action="" method="post" enctype="multipart/form-data">
+                <h1 class="title-form">Регистрация</h1>
+                <div class="form-container">
+
+                    <div class="form-container-left">
+                        <!-- <img id="frame" src="" class="image-preview"/>
+                        <input type="file" id="file" accept="image/jpg, image/jpeg, image/png" onchange="preview()"> -->
+
+                        <img id="frame" src="" class="image-preview"/>
+                        <label class="input-file">
+                            <input type="file" id="file" name="file" accept="image/jpg, image/jpeg, image/png" onchange="preview()">
+                            <span class="input-file-btn">Выбрать изображение</span> 
+                        </label>
+
+                    </div>
+
+                    <div class="form-container-right">
+                        <input type="text" name="name" placeholder="Введите никнейм" class="box" required>
+                        <input type="date" name="name" placeholder="Введите дату рождения" class="box" required>
+                        <input type="email" name="email" placeholder="Введите E-mail" class="box" required>
+                        <input type="password" name="password" placeholder="Введите пароль" class="box" required>
+                        <input type="password" name="сpassword" placeholder="Повторите пароль" class="box" required>
+                    </div>
+                </div>
+
+                <input type="submit" value="Зарегистрироваться" class="btn-form">
+                        <p class="btn-form-text">У вас уже есть аккаунт? <a href="login.html">Войти</a></p>
+                
+            </form>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>
