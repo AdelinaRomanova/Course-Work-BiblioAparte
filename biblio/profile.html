@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="js/like.js" defer></script>
-    <script src="js/carousel_home.js" defer></script>
-    <script src="js/script.js" defer></script>
+    <script src="js/carousel_profile.js" defer></script>
     <title>Библио Апарте</title>
 </head>
 <body>
@@ -20,32 +19,106 @@
                     <button type="submit"></button>
                 </form>
             </div>
-            <a class="btn_auth" href="auth.html">Войти</a>
+            <a class="btn_auth" href="profile.html">Профиль</a>
         </div>
     </header>
 
     <main class="container">
-        <!-- Блок - Что мы можем предложить?  -->
-        <div class="main_title">Что мы можем предложить?</div>
-        <div class="services_circles">
-            <div class="services_circle">
-                <img class="services_circle_img" src="img/collection.png" alt="Коллекция книг">
-                <div class="services_circle_text">Создавай коллекции</div>
+        <!-- Инфоррмация профиля  -->
+        <div class="profile_inf">
+            <div class="profile_inf_ava">
+                <img class="profile_inf_ava_photo" src="img/ava.png" alt="">
             </div>
-            <div class="services_circle">
-                <img class="services_circle_img" src="img/recens.png" alt="Рецензия пером">
-                <div class="services_circle_text">Пиши рецензии</div>
-            </div>
-            <div class="services_circle">
-                <img class="services_circle_img" src="img/status.png" alt="Девушка с книгой">
-                <div class="services_circle_text">Определяй статус книги</div>
-            </div>
+            <div class="profile_inf_name">bookworm</div>
+            <a class="profile_inf_bt_edit" href="">Редактировать</a>
         </div>
-        <!-- Блок - ТОП 10  -->
-        <div class="main_title">Топ-10</div>
+
+        <!-- Блок коллекций -->
+        <div class="main_title">Мои коллекции</div>
         <div class="wrapper">
-            <img class="arrow left" id="left" src="img/arrow_left.png" alt="">
-            <div class="list_books">
+                <img class="arrow_1 left" id="left" src="img/arrow_left.png" alt="">
+                <div class="list_books">
+                        <div class="list_book">
+                            <img src="img/cover_coll1.png" alt="Обложка" class="list_book_img">
+                            <div class="list_book_name">Лучше, чем приём у психолога</div>
+                        </div>
+                        <div class="list_book">
+                            <img src="img/cover_coll2.png" alt="Обложка" class="list_book_img">
+                            <div class="list_book_name">Пиратские истории</div>
+                        </div>
+                        <div class="list_book">
+                            <img src="img/cover_coll3.png" alt="Обложка" class="list_book_img">
+                            <div class="list_book_name">Любимое фэнтези</div>
+                        </div>
+                        <div class="list_book">
+                            <img src="img/cover_coll4.png" alt="Обложка" class="list_book_img">
+                            <div class="list_book_name">Чтиво на каждый день</div>
+                        </div>
+                        <div class="list_book">
+                            <img src="img/cover_coll1.png" alt="Обложка" class="list_book_img">
+                            <div class="list_book_name">Лучше, чем приём у психолога</div>
+                        </div>
+                        <div class="list_book">
+                            <img src="img/cover_coll1.png" alt="Обложка" class="list_book_img">
+                            <div class="list_book_name">Лучше, чем приём у психолога</div>
+                        </div>
+                </div>
+                <img class="arrow_1 rigth" id="right" src="img/arrow-rigth.png" alt="">
+        </div>
+        <div class="btn">
+            <a class="profile_bt_all" href="">Показать все</a>
+        </div>
+
+        <!-- Блок рецензий -->
+        <div class="main_title">Мои рецензии</div>
+        <div class="wrapper">
+                <img class="arrow_1 left" id="left_1" src="img/arrow_left.png" alt="">
+                <div class="list_books two">
+                        <div class="list_book">
+                            <img src="img/MasterMarg.png" alt="Обложка" class="list_book_img">
+                            <div class="list_book_name">Мастер и маргарита</div>
+                        </div>
+                        <div class="list_book">
+                            <img src="img/re_2.png" alt="Обложка" class="list_book_img">
+                            <div class="list_book_name">Преступление и наказание</div>
+                        </div>
+                        <div class="list_book">
+                            <img src="img/re_3.png" alt="Обложка" class="list_book_img">
+                            <div class="list_book_name">Анна Каренина</div>
+                        </div>
+                        <div class="list_book">
+                            <img src="img/re_4.png" alt="Обложка" class="list_book_img">
+                            <div class="list_book_name">Маленькие женщины</div>
+                        </div>
+                        <div class="list_book">
+                            <img src="img/re_4.png" alt="Обложка" class="list_book_img">
+                            <div class="list_book_name">Маленькие женщины</div>
+                        </div>
+                        <div class="list_book">
+                            <img src="img/re_4.png" alt="Обложка" class="list_book_img">
+                            <div class="list_book_name">Маленькие женщины</div>
+                        </div>
+                        <div class="list_book">
+                            <img src="img/re_4.png" alt="Обложка" class="list_book_img">
+                            <div class="list_book_name">Маленькие женщины</div>
+                        </div>
+                        <div class="list_book">
+                            <img src="img/re_4.png" alt="Обложка" class="list_book_img">
+                            <div class="list_book_name">Маленькие женщины</div>
+                        </div>
+                </div>
+                <img class="arrow_1 rigth" id="right_1" src="img/arrow-rigth.png" alt="">
+        </div>
+
+        <div class="btn">
+            <a class="profile_bt_all" href="">Показать все</a>
+        </div>
+
+        <!-- Блок - Мои книги -->
+        <div class="main_title">Мои книги</div>
+        <div class="wrapper">
+            <img class="arrow left" id="left_2" src="img/arrow_left.png" alt="">
+            <div class="list_books three">
                     <div class="list_book">
                         <img src="img/MasterMarg.png" alt="Обложка" class="list_book_img">
                         <div class="list_book_name">Мастер и Маргарита</div>
@@ -217,13 +290,19 @@
                         </div>
                     </div>
             </div>
-            <img class="arrow rigth" id="right" src="img/arrow-rigth.png" alt="">
+            <img class="arrow rigth" id="right_2" src="img/arrow-rigth.png" alt="">
         </div>
-        <!-- Блок - Популярное  -->
+
+        <div class="btn">
+            <a class="profile_bt_all" href="">Показать все</a>
+        </div>
+
+        <!-- Блок - Избранное  -->
+
         <div class="main_title">Популярное</div>
         <div class="wrapper">
-            <img class="arrow left" id="left_1" src="img/arrow_left.png" alt="">
-            <div class="list_books two">
+            <img class="arrow left" id="left_3" src="img/arrow_left.png" alt="">
+            <div class="list_books four">
                     <div class="list_book">
                         <img src="img/happiness.png" alt="Обложка" class="list_book_img">
                         <div class="list_book_name">Сыворотка счастья</div>
@@ -237,7 +316,7 @@
                                 <span></span>
                             </div>
                             <div class="list_book_estimation_like">
-                                <div class="heart"></div>
+                                <div class="heart fill-color"></div>
                             </div>
                         </div>
                     </div>
@@ -254,7 +333,7 @@
                                 <span></span>
                             </div>
                             <div class="list_book_estimation_like">
-                                <div class="heart"></div>
+                                <div class="heart fill-color"></div>
                             </div>
                         </div>
                     </div>
@@ -271,7 +350,7 @@
                                 <span></span>
                             </div>
                             <div class="list_book_estimation_like">
-                                <div class="heart"></div>
+                                <div class="heart fill-color"></div>
                             </div>
                         </div>
                     </div>
@@ -288,7 +367,7 @@
                                 <span></span>
                             </div>
                             <div class="list_book_estimation_like">
-                                <div class="heart"></div>
+                                <div class="heart fill-color"></div>
                             </div>
                         </div>
                     </div>
@@ -305,7 +384,7 @@
                                 <span></span>
                             </div>
                             <div class="list_book_estimation_like">
-                                <div class="heart"></div>
+                                <div class="heart fill-color"></div>
                             </div>
                         </div>
                     </div>
@@ -322,7 +401,7 @@
                                 <span></span>
                             </div>
                             <div class="list_book_estimation_like">
-                                <div class="heart"></div>
+                                <div class="heart fill-color"></div>
                             </div>
                         </div>
                     </div>
@@ -339,7 +418,7 @@
                                 <span></span>
                             </div>
                             <div class="list_book_estimation_like">
-                                <div class="heart"></div>
+                                <div class="heart fill-color"></div>
                             </div>
                         </div>
                     </div>
@@ -356,7 +435,7 @@
                                 <span></span>
                             </div>
                             <div class="list_book_estimation_like">
-                                <div class="heart"></div>
+                                <div class="heart fill-color"></div>
                             </div>
                         </div>
                     </div>
@@ -373,7 +452,7 @@
                                 <span></span>
                             </div>
                             <div class="list_book_estimation_like">
-                                <div class="heart"></div>
+                                <div class="heart fill-color"></div>
                             </div>
                         </div>
                     </div>
@@ -390,12 +469,16 @@
                                 <span></span>
                             </div>
                             <div class="list_book_estimation_like">
-                                <div class="heart"></div>
+                                <div class="heart fill-color"></div>
                             </div>
                         </div>
                     </div>
             </div>
-            <img class="arrow rigth" id="right_1" src="img/arrow-rigth.png" alt="">
+            <img class="arrow rigth" id="right_3" src="img/arrow-rigth.png" alt="">
+        </div>
+        
+        <div class="btn">
+            <a class="profile_bt_all" href="">Показать все</a>
         </div>
     </main>
 
@@ -416,7 +499,7 @@
             </div>
             
         </div>
-    </footer>
 
+    </footer>
 </body>
 </html>
