@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/like.js" defer></script>
+    <script src="js/carousel.js" defer></script>
+    <title>Библио Апарте</title>
+</head>
+<body>
+    <header class="container">
+        <div class="header-box">
+            <div class="header_title">БиблиоАпарте</div>
+            <div class="search">
+                <form>
+                    <input type="text" placeholder="Поиск">
+                    <button type="submit"></button>
+                </form>
+            </div>
+            <a class="btn_auth" href="auth.html">Войти</a>
+        </div>
+       
+    </header>
+
+    <main class="container">
+        <!-- Блок - Что мы можем предложить?  -->
+        <div class="main_title">Что мы можем предложить?</div>
+        <div class="services_circles">
+            <div class="services_circle">
+                <img class="services_circle_img" src="img/collection.png" alt="Коллекция книг">
+                <div class="services_circle_text">Создавай коллекции</div>
+            </div>
+            <div class="services_circle">
+                <img class="services_circle_img" src="img/recens.png" alt="Рецензия пером">
+                <div class="services_circle_text">Пиши рецензии</div>
+            </div>
+            <div class="services_circle">
+                <img class="services_circle_img" src="img/status.png" alt="Девушка с книгой">
+                <div class="services_circle_text">Определяй статус книги</div>
+            </div>
+        </div>
+        <!-- Блок - ТОП 10  -->
+        <div class="main_title">Топ-10</div>
+        <div class="wrapper">
+            <img class="arrow left" id="left" src="img/arrow_left.png" alt="">
+            <div class="list_books">
+                    <div class="list_book">
+                        <img src="img/MasterMarg.png" alt="Обложка" class="list_book_img">
+                        <div class="list_book_name">Мастер и Маргарита</div>
+                        <div class="list_book_author">Булгаков М. А.</div>
+                        <div class="list_book_estimation">
+                            <div class="list_book_estimation_rating">
+                                <span class="active"></span>	
+                                <span class="active"></span>    
+                                <span class="active"></span>  
+                                <span class="active"></span>    
+                                <span class="active"></span>
+                            </div>
+                            <div class="list_book_estimation_like">
+                                <div class="heart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_book">
+                        <img src="img/BookThief.png" alt="Обложка" class="list_book_img">
+                        <div class="list_book_name">Книжный вор</div>
+                        <div class="list_book_author">Маркус З.</div>
+                        <div class="list_book_estimation">
+                            <div class="list_book_estimation_rating">
+                                <span class="active"></span>	
+                                <span class="active"></span>    
+                                <span class="active"></span>  
+                                <span class="active"></span>    
+                                <span></span>
+                            </div>
+                            <div class="list_book_estimation_like">
+                                <div class="heart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_book">
+                        <img src="img/HowToSell.png" alt="Обложка" class="list_book_img">
+                        <div class="list_book_name">Как правильно продавать, если ты интроверт...</div>
+                        <div class="list_book_author">Меттью П.</div>
+                        <div class="list_book_estimation">
+                            <div class="list_book_estimation_rating">
+                                <span class="active"></span>	
+                                <span class="active"></span>    
+                                <span class="active"></span>  
+                                <span></span>    
+                                <span></span>
+                            </div>
+                            <div class="list_book_estimation_like">
+                                <div class="heart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_book">
+                        <img src="img/Architecture.png" alt="Обложка" class="list_book_img">
+                        <div class="list_book_name">Архитектура</div>
+                        <div class="list_book_author">Леонардо Д. В.</div>
+                        <div class="list_book_estimation">
+                            <div class="list_book_estimation_rating">
+                                <span class="active"></span>	
+                                <span class="active"></span>    
+                                <span></span>  
+                                <span></span>    
+                                <span></span>
+                            </div>
+                            <div class="list_book_estimation_like">
+                                <div class="heart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_book">
+                        <img src="img/Architecture.png" alt="Обложка" class="list_book_img">
+                        <div class="list_book_name">Архитектура</div>
+                        <div class="list_book_author">Леонардо Д. В.</div>
+                        <div class="list_book_estimation">
+                            <div class="list_book_estimation_rating">
+                                <span class="active"></span>	
+                                <span class="active"></span>    
+                                <span></span>  
+                                <span></span>    
+                                <span></span>
+                            </div>
+                            <div class="list_book_estimation_like">
+                                <div class="heart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_book">
+                        <img src="img/Architecture.png" alt="Обложка" class="list_book_img">
+                        <div class="list_book_name">Архитектура</div>
+                        <div class="list_book_author">Леонардо Д. В.</div>
+                        <div class="list_book_estimation">
+                            <div class="list_book_estimation_rating">
+                                <span class="active"></span>	
+                                <span class="active"></span>    
+                                <span></span>  
+                                <span></span>    
+                                <span></span>
+                            </div>
+                            <div class="list_book_estimation_like">
+                                <div class="heart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_book">
+                        <img src="img/Architecture.png" alt="Обложка" class="list_book_img">
+                        <div class="list_book_name">Архитектура</div>
+                        <div class="list_book_author">Леонардо Д. В.</div>
+                        <div class="list_book_estimation">
+                            <div class="list_book_estimation_rating">
+                                <span class="active"></span>	
+                                <span class="active"></span>    
+                                <span></span>  
+                                <span></span>    
+                                <span></span>
+                            </div>
+                            <div class="list_book_estimation_like">
+                                <div class="heart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_book">
+                        <img src="img/Architecture.png" alt="Обложка" class="list_book_img">
+                        <div class="list_book_name">Архитектура</div>
+                        <div class="list_book_author">Леонардо Д. В.</div>
+                        <div class="list_book_estimation">
+                            <div class="list_book_estimation_rating">
+                                <span class="active"></span>	
+                                <span class="active"></span>    
+                                <span></span>  
+                                <span></span>    
+                                <span></span>
+                            </div>
+                            <div class="list_book_estimation_like">
+                                <div class="heart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_book">
+                        <img src="img/Architecture.png" alt="Обложка" class="list_book_img">
+                        <div class="list_book_name">Архитектура</div>
+                        <div class="list_book_author">Леонардо Д. В.</div>
+                        <div class="list_book_estimation">
+                            <div class="list_book_estimation_rating">
+                                <span class="active"></span>	
+                                <span class="active"></span>    
+                                <span></span>  
+                                <span></span>    
+                                <span></span>
+                            </div>
+                            <div class="list_book_estimation_like">
+                                <div class="heart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_book">
+                        <img src="img/Architecture.png" alt="Обложка" class="list_book_img">
+                        <div class="list_book_name">Архитектура</div>
+                        <div class="list_book_author">Леонардо Д. В.</div>
+                        <div class="list_book_estimation">
+                            <div class="list_book_estimation_rating">
+                                <span class="active"></span>	
+                                <span class="active"></span>    
+                                <span></span>  
+                                <span></span>    
+                                <span></span>
+                            </div>
+                            <div class="list_book_estimation_like">
+                                <div class="heart"></div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <img class="arrow rigth" id="right" src="img/arrow-rigth.png" alt="">
+        </div>
+        <!-- Блок - Популярное  -->
+        <div class="main_title">Популярное</div>
+        <div class="wrapper">
+            <img class="arrow left" id="left_1" src="img/arrow_left.png" alt="">
+            <div class="list_books two">
+                    <div class="list_book">
+                        <img src="img/happiness.png" alt="Обложка" class="list_book_img">
+                        <div class="list_book_name">Сыворотка счастья</div>
+                        <div class="list_book_author">Калинина Д.</div>
+                        <div class="list_book_estimation">
+                            <div class="list_book_estimation_rating">
+                                <span class="active"></span>	
+                                <span class="active"></span>    
+                                <span></span>  
+                                <span></span>    
+                                <span></span>
+                            </div>
+                            <div class="list_book_estimation_like">
+                                <div class="heart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_book">
+                        <img src="img/birds.png" alt="Обложка" class="list_book_img">
+                        <div class="list_book_name">Саги огненных птиц</div>
+                        <div class="list_book_author">Ёрм А.</div>
+                        <div class="list_book_estimation">
+                            <div class="list_book_estimation_rating">
+                                <span class="active"></span>	
+                                <span class="active"></span>    
+                                <span class="active"></span>  
+                                <span></span>    
+                                <span></span>
+                            </div>
+                            <div class="list_book_estimation_like">
+                                <div class="heart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_book">
+                        <img src="img/dragon.png" alt="Обложка" class="list_book_img">
+                        <div class="list_book_name">Как убить дракона</div>
+                        <div class="list_book_author">Стивенсон К.</div>
+                        <div class="list_book_estimation">
+                            <div class="list_book_estimation_rating">
+                                <span class="active"></span>	
+                                <span class="active"></span>    
+                                <span class="active"></span>  
+                                <span></span>    
+                                <span></span>
+                            </div>
+                            <div class="list_book_estimation_like">
+                                <div class="heart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_book">
+                        <img src="img/psih.png" alt="Обложка" class="list_book_img">
+                        <div class="list_book_name">Психосоматика. Как распознать и обезвредить хронический стресс</div>
+                        <div class="list_book_author">Кирмичи А.</div>
+                        <div class="list_book_estimation">
+                            <div class="list_book_estimation_rating">
+                                <span class="active"></span>	
+                                <span class="active"></span>    
+                                <span class="active"></span>    
+                                <span class="active"></span>    
+                                <span></span>
+                            </div>
+                            <div class="list_book_estimation_like">
+                                <div class="heart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_book">
+                        <img src="img/Architecture.png" alt="Обложка" class="list_book_img">
+                        <div class="list_book_name">Архитектура</div>
+                        <div class="list_book_author">Леонардо Д. В.</div>
+                        <div class="list_book_estimation">
+                            <div class="list_book_estimation_rating">
+                                <span class="active"></span>	
+                                <span class="active"></span>    
+                                <span></span>  
+                                <span></span>    
+                                <span></span>
+                            </div>
+                            <div class="list_book_estimation_like">
+                                <div class="heart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_book">
+                        <img src="img/Architecture.png" alt="Обложка" class="list_book_img">
+                        <div class="list_book_name">Архитектура</div>
+                        <div class="list_book_author">Леонардо Д. В.</div>
+                        <div class="list_book_estimation">
+                            <div class="list_book_estimation_rating">
+                                <span class="active"></span>	
+                                <span class="active"></span>    
+                                <span></span>  
+                                <span></span>    
+                                <span></span>
+                            </div>
+                            <div class="list_book_estimation_like">
+                                <div class="heart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_book">
+                        <img src="img/Architecture.png" alt="Обложка" class="list_book_img">
+                        <div class="list_book_name">Архитектура</div>
+                        <div class="list_book_author">Леонардо Д. В.</div>
+                        <div class="list_book_estimation">
+                            <div class="list_book_estimation_rating">
+                                <span class="active"></span>	
+                                <span class="active"></span>    
+                                <span></span>  
+                                <span></span>    
+                                <span></span>
+                            </div>
+                            <div class="list_book_estimation_like">
+                                <div class="heart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_book">
+                        <img src="img/Architecture.png" alt="Обложка" class="list_book_img">
+                        <div class="list_book_name">Архитектура</div>
+                        <div class="list_book_author">Леонардо Д. В.</div>
+                        <div class="list_book_estimation">
+                            <div class="list_book_estimation_rating">
+                                <span class="active"></span>	
+                                <span class="active"></span>    
+                                <span></span>  
+                                <span></span>    
+                                <span></span>
+                            </div>
+                            <div class="list_book_estimation_like">
+                                <div class="heart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_book">
+                        <img src="img/Architecture.png" alt="Обложка" class="list_book_img">
+                        <div class="list_book_name">Архитектура</div>
+                        <div class="list_book_author">Леонардо Д. В.</div>
+                        <div class="list_book_estimation">
+                            <div class="list_book_estimation_rating">
+                                <span class="active"></span>	
+                                <span class="active"></span>    
+                                <span></span>  
+                                <span></span>    
+                                <span></span>
+                            </div>
+                            <div class="list_book_estimation_like">
+                                <div class="heart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_book">
+                        <img src="img/Architecture.png" alt="Обложка" class="list_book_img">
+                        <div class="list_book_name">Архитектура</div>
+                        <div class="list_book_author">Леонардо Д. В.</div>
+                        <div class="list_book_estimation">
+                            <div class="list_book_estimation_rating">
+                                <span class="active"></span>	
+                                <span class="active"></span>    
+                                <span></span>  
+                                <span></span>    
+                                <span></span>
+                            </div>
+                            <div class="list_book_estimation_like">
+                                <div class="heart"></div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <img class="arrow rigth" id="right_1" src="img/arrow-rigth.png" alt="">
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_main">
+            <div class="footer container">
+                <div class="footer_main_text">
+                    <div class="footer_main_text_title">БиблиоАпарте</div>
+                    <div class="footer_main_text_description">твоя карманная библиотека</div>
+                </div>
+                <div class="footer_main_contacts">
+                    <div class="footer_main_contacts_text">Контакты</div>
+                    <div class="footer_main_contacts_text">biblioAparte@yandex.ru</div>
+                </div>
+                <a href="/html/index.html">
+                    <img class="footer_main_bthome" src="img/home page.png" alt="Домашняя страница">
+                </a> 
+            </div>
+            
+        </div>
+
+    </footer>
+
+</body>
+</html>
