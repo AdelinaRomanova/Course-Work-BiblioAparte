@@ -741,6 +741,206 @@ a {
     align-items: center;
 }
 
+.form-edit {
+    min-height: 550px;
+    
+
+    display: flex;
+    justify-content: center;
+}
+
+.form-edit form{
+    text-align: center;
+    width: 980px;
+    height: 550px;
+
+    border-radius: 104px;
+
+    margin-top: 35px;
+}
+
+.form-edit form .form-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-edit form .title-form {
+    font-size: 48px;
+    line-height: 57px;
+    font-style: normal;
+    font-weight: 400;
+
+    margin-top: 2%;
+}
+
+/* left part form */
+
+.form-edit form .form-container-left {
+    width: 35%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.form-edit form .image-preview {
+    width: 165px;
+    height: 165px;
+    background-color: #FFF;
+    object-fit: cover;
+
+    border-radius: 244px;
+}
+
+.form-edit form .input-file {
+	position: relative;
+	display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 270px;
+    height: 100px;
+}
+
+.form-edit form .input-file-btn {
+	position: relative;
+	display: inline-block;
+
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+
+	font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.18em;
+
+	color: rgb(0 0 0);
+	text-align: center;
+    vertical-align: middle;
+
+	border-radius: 244px;
+	background-color: #FFF;
+	
+    padding: 2% 2%;
+	
+
+	box-sizing: border-box;
+	border: none;
+	margin: 0;
+	transition: background-color 0.2s;
+}
+.form-edit form .input-file-text {
+	padding: 0 10px;
+	line-height: 40px;
+	display: inline-block;
+}
+.form-edit form .input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+ 
+/* Hover/active */
+.form-edit form .input-file:hover .input-file-btn {
+	background-color: #D9D9D9;
+}
+.form-edit form .input-file:active .input-file-btn {
+	background-color: #7f7a6a;
+}
+ 
+/* Disabled */
+.form-edit form .input-file input[type=file]:disabled + .input-file-btn {
+	background-color: #D9D9D9;
+}
+
+
+
+/* right part form */
+
+.form-edit form .form-container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 50%;
+
+    height: 350px;
+}
+
+.form-edit form .box{
+    border-radius: 244px;
+
+    font-family: Jura regular;
+
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    /* identical to box height */
+    letter-spacing: 0.18em;
+    color: black;
+
+    padding: 3% 3%;
+
+    background-color: #D9D9D9;
+
+    border: none;
+}
+
+
+.form-edit form .box:focus{
+   outline: none;
+}
+
+.form-edit form .btn-form {
+    background: #383A39;
+    border-radius: 15px;
+    border: none;
+
+    font-family: Montserrat Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    /* identical to box height */
+
+    letter-spacing: 0.18em;
+
+    color: #D9D9D9;
+
+    padding: 1.5% 4%;
+    margin-top: 2%;
+}
+
+.btn-form-text {
+    display: inline-block;
+    font-family: Montserrat Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.18em;
+
+    background-color: #C6BEA5;
+
+    padding: 1.5% 4%;
+    margin-top: 2%;
+
+    border-radius: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
 
 @keyframes popup {
     100% {
