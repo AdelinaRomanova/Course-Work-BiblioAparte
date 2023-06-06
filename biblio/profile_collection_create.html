@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.js" defer></script>
+    <title>Библио Апарте</title>
+</head>
+<body>
+    <header class="container">
+        <div class="header-box">
+            <div class="header_title">БиблиоАпарте</div>
+            <div class="search">
+                <form>
+                    <input type="text" placeholder="Поиск">
+                    <button type="submit"></button>
+                </form>
+            </div>
+            <a class="btn_auth" href="auth.html">Войти</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="collection_create">
+            <div class="form-edit">
+                <form action="" method="post" enctype="multipart/form-data">
+                    <h1 class="title-form">Создание коллекции</h1>
+                    <div class="form-container">
+    
+                        <div class="form-container-left">
+    
+                            <img id="frame" class="image-preview" alt=""/>
+                            <label class="input-file">
+                                <input type="file" id="file" name="file" accept="image/jpg, image/jpeg, image/png" onchange="preview()">
+                                <span class="input-file-btn">Добавить обложку</span> 
+                            </label>
+    
+                        </div>
+    
+                        <div class="form-container-right">
+                            <input type="text" name="name" placeholder="Введите название" class="box" required>
+                            <textarea rows="5" cols="15" placeholder="Введите описание коллекции" required></textarea>
+                        </div>
+                    </div>
+    
+                    <a href="profile.html" class="btn-form-text">Сохранить</a></p>
+                    
+                </form>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
