@@ -967,6 +967,18 @@ a {
     margin-top: 50px;
 }
 
+.buttons {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 18px;
+}
+
+
+
 .remove {
     font-family: Montserrat Regular;
     font-style: normal;
@@ -979,12 +991,34 @@ a {
 
     width: 160px;
     height: 36px;
-    margin-top: 25px;
+    margin-top: 5px;
 
     border: none;
     border-radius: 100px;
 
-    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.btn-edit {
+    font-family: Montserrat Regular;
+    font-style: normal;
+    font-weight: 40;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.18em;
+
+    background-color: #A2DEA0;
+
+    text-align: center;
+
+    width: 220px;
+    height: 36px;
+
+    border: none;
+    border-radius: 100px;
+
+    padding-top: 5px;
+
 }
 
 .center {
@@ -1037,7 +1071,7 @@ textarea {
     width: 230px;
     height: 320px;
 
-    border-radius: 14px;
+    border-radius: 50px;
 
     background-color: #D9D9D9;
 
