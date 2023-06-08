@@ -519,6 +519,10 @@ a {
     cursor: pointer;
 }
 
+.list_book .center {
+    margin-top: 15px;
+}
+
 .list_books .list_book:last-child {
     margin-right: 10px;
 }
@@ -976,7 +980,6 @@ a {
 
     margin-top: 18px;
 }
-
 
 
 .remove {
@@ -1469,6 +1472,81 @@ textarea {
     height: 20px;
 }
 
+/* Рецензии пользователя  */
+
+.review {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 40px;
+}
+
+.review .book_information_name {
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.review .book_review_text {
+    margin: 0px;
+
+}
+
+.review .buttons {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 70px;
+}
+
+.review .remove {
+    margin-top: 0px;
+    height: 41px;
+
+    margin-left: 30px;
+}
+
+.review .btn-edit {
+    margin-left: -50px;
+}
+
+/* Отдельная рецензия пользователя  */
+
+.review_text p {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.review .book_information {
+    height: auto;
+}
+
+/* Создание рецензии  */
+
+.form-container-right-review {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 80%;
+
+    height: 900px;
+}
+
+.textarea-review {
+    padding: 20px 20px;
+}
+
+.form-size form {
+    height: auto;
+}
+
+.review_create .form-edit form {
+    height: auto;
+}
 
 @keyframes popup {
     100% {

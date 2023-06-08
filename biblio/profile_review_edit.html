@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/send_review.js" defer></script>
+    <title>Библио Апарте</title>
+</head>
+<body>
+    <header class="container">
+        <div class="header-box">
+            <div class="header_title">БиблиоАпарте</div>
+            <div class="search">
+                <form>
+                    <input type="text" placeholder="Поиск">
+                    <button type="submit"></button>
+                </form>
+            </div>
+            <a class="btn_auth" href="profile.html">Профиль</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="review_create">
+            <div class="form-edit">
+                <form action="" method="post" enctype="multipart/form-data">
+                    <h1 class="title-form" style="margin-bottom: 70px;">Редактирование рецензии</h1>
+                    <div class="form-container">
+    
+                        <div class="form-container-left">
+    
+                            <img src="img/MasterMarg.png" alt="Обложка" class="list_book_img">
+    
+                        </div>
+    
+                        <div class="form-container-right-review">
+                            <textarea id="text_review" rows="100" cols="15" placeholder="Напишите рецензию..." required class="textarea-review">Со мной приключилась странная болезнь : всё, что не берусь перечитывать приобретает совершенно иной смысл, зачастую совершенно противоположный первоначальному. Братья Карамазовы, Война и мир, Анна Каренина...И вот этот синдром добрался до Мастера и Маргариты. Я его читала летом, осталось ощущение того, что меня двинули кулаком в живот. Подумалось: стресс - перечитаю потом. И вот закончила перечитывать буквально на днях. Нет, тогда - летом - мне не показалось. Всё верно. Попробую рассказать. В юности для меня это был, пожалуй, один из самых сокровенных романов об идеальной любви, о судьбе Мастера с безусловной параллелью с судьбой Булгакова и Елены.Роман о людях, о том, что для них важно.Ну, например, трусость - самый страшный порок; Мы говорим с тобой на разных языках, как всегда, но вещи, о которых мы говорим, от этого не меняются;Каждый украшает себя как может. И так далее.Разговаривать об этом романе я вообще не могла ни с кем очень долгое время: слишком сокровенное, слишком сильно брало за душу. От слов и я хочу, чтобы Фриде перестали подавать платок я просто начинала рыдать. Так продолжалось очень долгое время. И вот я перечитала роман уже, в принципе, пережив немало в своей жизни: и потери, и приобретения, и радость, и горе, и разочарование, и любовь, и страсть - в общем стала взрослой. :) И пришла я к выводу, что это был предсмертный роман. И сколько бы мне ни говорили, что он итог всего творчества Булгакова - неправда . Это роман умирающего человека, размышляющего о том, куда он попадёт после смерти. И попадёт ли куда-то вообще.Есть ли то место куда попадают после смерти.Словно человек смотрит в большое зеркало и пытается найти ответ на то, как он жил и чего достоин: наказания или награды. Каждая линия в романе отражение именно этого состояния поиска и ответов на этот в принципе один-единственный вопрос. Отражение Воланда, Пилата и реальности. И всё это проносится у Мастера, словно в калейдоскопе.
+                        
+                            </textarea>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn-form-text" style="margin-top: 50px; border: none;" onclick="redirectToProfile()">Сохранить</button>
+                    
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_main">
+            <div class="footer container">
+                <div class="footer_main_text">
+                    <div class="footer_main_text_title">БиблиоАпарте</div>
+                    <div class="footer_main_text_description">твоя карманная библиотека</div>
+                </div>
+                <div class="footer_main_contacts">
+                    <div class="footer_main_contacts_text">Контакты</div>
+                    <div class="footer_main_contacts_text">biblioAparte@yandex.ru</div>
+                </div>
+                <a href="index.html">
+                    <img class="footer_main_bthome" src="img/home page.png" alt="Домашняя страница">
+                </a> 
+            </div>
+            
+        </div>
+    </footer>
+
+    
+</body>
+</html>
