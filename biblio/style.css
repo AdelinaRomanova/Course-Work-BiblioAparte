@@ -1,5 +1,5 @@
-/* fonts */
 
+/* fonts */
 /* regular */
 @font-face {
     font-family: 'Jura regular';
@@ -541,7 +541,7 @@ a {
     line-height: 22px;
     letter-spacing: 0.18em;
 
-    height: 40px;
+    height: 45px;
 
     /* ограничение строк */
     display: -webkit-box;
@@ -734,7 +734,7 @@ a {
 
     background-color: #C6BEA5;
 
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .btn {
@@ -1090,7 +1090,385 @@ textarea {
 
 textarea {
     outline: none;
- }
+}
+
+/*- - - - - - - - book page - - - - - - - - */
+
+.book_informations {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 90px;
+}
+
+.book_information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin-left: 50px;
+
+    height: 300px;
+}
+
+.book_information_name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 57px;
+
+    margin-bottom: 20px;
+}
+
+.book_information_properties {
+    display: flex;
+    align-items: center;
+
+    font-style: normal;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.18em;
+
+    height: 50px;
+
+}
+
+.book_information_properties_item {
+    font-weight: 800;
+}
+
+.book_information_properties_value {
+    font-weight: 400;
+
+    margin-left: 20px;
+}
+
+/* Рейтинг книги  */
+.rating-area {
+	overflow: hidden;
+	width: 265px;
+}
+.rating-area:not(:checked) > input {
+	display: none;
+}
+.rating-area:not(:checked) > label {
+	float: right;
+	width: 42px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 32px;
+	line-height: 32px;
+	color: lightgrey;
+}
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+.rating-area > input:checked ~ label {
+	color: gold;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+	color: gold;
+}
+.rate-area > label:active {
+	position: relative;
+}
+
+
+.book_information_properties .heart {
+    margin-top: 8px;
+    margin-left: 20px;
+
+    height: 15px;
+    width: 15px;
+}
+
+.add_book_col {
+    font-family: Montserrat Regular;
+    font-style: normal;
+    font-weight: 40;
+    font-size: 22px;
+    line-height: 27px;
+
+    background-color: #C6BEA5;
+
+    text-align: center;
+
+    border: none;
+    border-radius: 100px;
+
+    padding: 10px 20px;
+}
+
+.center-book {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 70px;
+}
+
+/* Стили для модального окна */
+.modal {
+    display: none; /* Скрываем модальное окно по умолчанию */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+
+    font-size: 22px;
+
+    border-radius: 20px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Стили для списка коллекций */
+  #collection-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #collection-list li {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-size: 20px;
+  }
+  
+  #collection-list li:hover {
+    background-color: #ddd;
+  }
+
+
+.book_description_title {
+    font-family: Montserrat Regular;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 26px;
+    letter-spacing: 0.18em;
+
+    margin-top: 70px;
+}
+
+.book_description_text {
+    font-family: Montserrat Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 26px;
+
+    width: 1110px;
+
+    margin-top: 30px;
+
+    letter-spacing: 0.1em;
+
+    word-break: normal;
+}
+
+/* review book  */
+.book_review {
+    display: none;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.book_review_profile {
+    font-family: Montserrat Regular;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.18em;
+
+    text-align: right;
+
+    margin-bottom: 40px;
+    margin-right: 4px;
+    margin-top: 50px;
+}
+
+.book_review_text_back {
+    background: #D9D9D9;
+    border-radius: 41px;
+}
+
+.book_review_text {
+    display: inline-block;
+    margin: 20px 20px;
+
+}
+
+.book_review_text p {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 26px;
+
+
+    margin: 0; /* Убираем внешний отступ */
+    -webkit-line-clamp: 5; /* Число отображаемых строк */
+    display: -webkit-box; /* Включаем флексбоксы */
+    -webkit-box-orient: vertical; /* Вертикальная ориентация */
+    overflow: hidden; /* Обрезаем всё за пределами блока */
+}
+
+.book_review_alltext {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 23px;
+    /* identical to box height */
+
+    letter-spacing: 0.1em;
+}
+
+/* Комментарии к книге  */
+.book_commet {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    margin-top: 40px;
+}
+
+.book_comment_profile_ava {
+    width: 130px;
+    height: 130px;
+}
+
+.book_comment_text {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 50px;
+}
+
+.book_comment_text_nickname {
+    font-family: Montserrat Regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 26px;
+    letter-spacing: 0.18em;
+
+    margin-bottom: 20px;
+}
+
+.book_comment_text_area {
+    background: #D9D9D9;
+    border-radius: 41px;
+
+    width: 700px;
+    height: 100px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 26px;
+    letter-spacing: 0.18em;
+
+    padding: 20px 20px;
+}
+
+.send_com {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+.textarea_com {
+    padding: 20px 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.bt {
+    display: flex;
+    justify-content: right;
+}
+
+/* Статус книги  */
+
+.status-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin-top: 30px;
+
+    font-size: 20px;
+
+    height: 150px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+
+    letter-spacing: 0.1em
+}
+
+.status-button {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+
+.status-button label {
+    margin-left: 20px;
+}
+
+.status-button input[type=radio] {
+    width: 20px;
+    height: 20px;
+}
+
 
 @keyframes popup {
     100% {
