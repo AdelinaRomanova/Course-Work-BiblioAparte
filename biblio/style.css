@@ -1548,6 +1548,11 @@ textarea {
     height: auto;
 }
 
+/* скрываем все книги, начиная с пятой */
+.list_book:nth-child(n+5) {
+    display: none;
+}
+
 @keyframes popup {
     100% {
         transform: scale(1.2) rotate(-45deg);
