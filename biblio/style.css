@@ -1111,7 +1111,7 @@ textarea {
 
     margin-left: 50px;
 
-    height: 300px;
+    height: 350px;
 }
 
 .book_information_name {
@@ -1440,7 +1440,7 @@ textarea {
     flex-direction: column;
     justify-content: space-around;
 
-    margin-top: 30px;
+    margin-top: 50px;
 
     font-size: 20px;
 
@@ -1549,8 +1549,90 @@ textarea {
 }
 
 /* скрываем все книги, начиная с пятой */
-.list_book:nth-child(n+5) {
+.collections .list_book:nth-child(n+5) {
     display: none;
+}
+
+/* Страница поиска  */
+
+
+.form-search form .book_description_title{
+    font-family: Montserrat Regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.form-search .book_description_title{
+    font-family: Montserrat Regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.book_description_title_serch {
+    font-family: Montserrat Regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+
+    margin-top: 30px;
+}
+
+.form-search form {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	margin-bottom: 20px;
+
+    width: 500px;
+}
+
+.form-search .collections {
+    justify-content: left;
+
+    margin-top: 0px;
+}
+
+label {
+	margin-top: 5px;
+
+    font-family: Montserrat Regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 57px;
+}
+
+select, input[type="number"], input {
+
+    width: 500px;
+    height: 42px;
+    padding-left: 15px;
+
+    background-color: #eaeaea;
+
+    border: none;
+    border-radius: 244px;
+
+    font-family: Montserrat Regular;
+    font-size: 18px;
+
+    color: #8b8989;
+
+    outline:none;
+}
+
+input[type="submit"] {
+	margin-top: 20px;
+    width: 200px;
+    background-color: #C6BEA5;
+
+    text-align: center;
+
+    padding-right: 15px;
+
+    color: black;
 }
 
 @keyframes popup {

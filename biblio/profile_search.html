@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/like.js" defer></script>
+    <title>Библио Апарте</title>
+</head>
+<body>
+    <header class="container">
+        <div class="header-box">
+            <div class="header_title">БиблиоАпарте</div>
+            <div class="search">
+                <form action="profile_search.html">
+                    <input type="text" placeholder="Мастер и маргарита">
+                    <button type="submit"></button>
+                  </form>
+            </div>
+            <a class="btn_auth" href="profile.html">Профиль</a>
+        </div>
+       
+    </header>
+
+    <main class="container">
+        <div class="form-search">
+            <form id="search-form">
+                <div class="book_description_title">Фильтрация:</div>
+                <label for="book-title">Название книги:</label>
+                <input type="text" id="book-title" name="book-title" placeholder="Мастер и маргарита">
+                <label for="book-genre">Жанр:</label>
+                <select id="book-genre" name="book-genre">
+                    <option value="">Выберите жанр</option>
+                    <option value="Художественная литература">Художественная литература</option>
+                    <option value="Наука и техника">Наука и техника</option>
+                    <option value="Научно-популярная литература">Психология</option>
+                    <option value="Красота. Здоровье. Спорт">Красота. Здоровье. Спорт</option>
+                    <option value="Книги для детей">Книги для детей</option>
+                </select>
+                <label for="book-year">Год издания:</label>
+                <input type="number" id="book-year" name="book-year">
+                <label for="book-age">Возрастные ограничения:</label>
+                <select id="book-age" name="book-age">
+                    <option value="">Выберите возрастные ограничения</option>
+                    <option value="0+">0+</option>
+                    <option value="6+">6+</option>
+                    <option value="12+">12+</option>
+                    <option value="16+">16+</option>
+                    <option value="18+">18+</option>
+                </select>
+                <div class="center">
+                    <input type="submit" value="Найти">
+                </div>
+            </form>
+            <div class="book_description_title_serch">Результаты по вашему запросу:</div>
+
+            <div class="collections">
+                <div class="list_book">
+                    <a href="book.html">
+                        <img src="img/MasterMarg.png" alt="Обложка" class="list_book_img">
+                        <div class="list_book_name">Мастер и Маргарита</div>
+                        <div class="list_book_author">Булгаков М. А.</div>
+                        </a>
+                        <div class="list_book_estimation">
+                            <div class="list_book_estimation_rating">
+                                <span class="active"></span>	
+                                <span class="active"></span>    
+                                <span class="active"></span>  
+                                <span class="active"></span>    
+                                <span class="active"></span>
+                            </div>
+                            <div class="list_book_estimation_like">
+                                <div class="heart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_main">
+            <div class="footer container">
+                <div class="footer_main_text">
+                    <div class="footer_main_text_title">БиблиоАпарте</div>
+                    <div class="footer_main_text_description">твоя карманная библиотека</div>
+                </div>
+                <div class="footer_main_contacts">
+                    <div class="footer_main_contacts_text">Контакты</div>
+                    <div class="footer_main_contacts_text">biblioAparte@yandex.ru</div>
+                </div>
+                <a href="index.html">
+                    <img class="footer_main_bthome" src="img/home page.png" alt="Домашняя страница">
+                </a> 
+            </div>
+            
+        </div>
+    </footer>
+
+</body>
+</html>
