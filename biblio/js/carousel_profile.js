@@ -26,13 +26,13 @@ arrowR.addEventListener("click", () => {
         carosel.scrollLeft += 280;
     }
     if ( window.innerWidth < 1105 && window.innerWidth > 890) {
-        carosel.scrollLeft += 400;
+        carosel.scrollLeft += 275;
     }
     if ( window.innerWidth < 890 && window.innerWidth > 715) {
-        carosel.scrollLeft += 340;
+        carosel.scrollLeft += 275;
     }
     if ( window.innerWidth < 715) {
-        carosel.scrollLeft += 430;
+        carosel.scrollLeft += 279;
     }
 })
 
@@ -41,13 +41,13 @@ arrowR_1.addEventListener("click", () => {
         carosel_1.scrollLeft += 280;
     }
     if ( window.innerWidth < 1105 && window.innerWidth > 890) {
-        carosel_1.scrollLeft += 400;
+        carosel_1.scrollLeft += 275;
     }
     if ( window.innerWidth < 890 && window.innerWidth > 715) {
-        carosel_1.scrollLeft += 340;
+        carosel_1.scrollLeft += 275;
     }
     if ( window.innerWidth < 715) {
-        carosel_1.scrollLeft += 430;
+        carosel_1.scrollLeft += 279;
     }
 })
 
@@ -56,13 +56,13 @@ arrowR_2.addEventListener("click", () => {
         carosel_2.scrollLeft += 280;
     }
     if ( window.innerWidth < 1105 && window.innerWidth > 890) {
-        carosel_2.scrollLeft += 400;
+        carosel_2.scrollLeft += 275;
     }
     if ( window.innerWidth < 890 && window.innerWidth > 715) {
-        carosel_2.scrollLeft += 340;
+        carosel_2.scrollLeft += 275;
     }
     if ( window.innerWidth < 715) {
-        carosel_2.scrollLeft += 430;
+        carosel_2.scrollLeft += 279;
     }
 })
 
@@ -71,13 +71,13 @@ arrowR_3.addEventListener("click", () => {
         carosel_3.scrollLeft += 280;
     }
     if ( window.innerWidth < 1105 && window.innerWidth > 890) {
-        carosel_3.scrollLeft += 400;
+        carosel_3.scrollLeft += 275;
     }
     if ( window.innerWidth < 890 && window.innerWidth > 715) {
-        carosel_3.scrollLeft += 340;
+        carosel_3.scrollLeft += 275;
     }
     if ( window.innerWidth < 715) {
-        carosel_3.scrollLeft += 430;
+        carosel_3.scrollLeft += 279;
     }
 })
 
@@ -86,13 +86,13 @@ arrowLeft.addEventListener("click", () => {
         carosel.scrollLeft -= 280;
     }
     if ( window.innerWidth < 1105 && window.innerWidth > 890) {
-        carosel.scrollLeft -= 400;
+        carosel.scrollLeft -= 280;
     }
     if ( window.innerWidth < 890 && window.innerWidth > 715) {
-        carosel.scrollLeft -= 340;
+        carosel.scrollLeft -= 280;
     }
     if ( window.innerWidth < 715) {
-        carosel.scrollLeft -= 430;
+        carosel.scrollLeft -= 280;
     }
 })
 
@@ -102,13 +102,13 @@ arrowLeft_1.addEventListener("click", () => {
         carosel_1.scrollLeft -= 280;
     }
     if ( window.innerWidth < 1105 && window.innerWidth > 890) {
-        carosel_1.scrollLeft -= 400;
+        carosel_1.scrollLeft -= 280;
     }
     if ( window.innerWidth < 890 && window.innerWidth > 715) {
-        carosel_1.scrollLeft -= 340;
+        carosel_1.scrollLeft -= 280;
     }
     if ( window.innerWidth < 715) {
-        carosel_1.scrollLeft -= 430;
+        carosel_1.scrollLeft -= 280;
     }
 })
 
@@ -117,13 +117,13 @@ arrowLeft_2.addEventListener("click", () => {
         carosel_2.scrollLeft -= 280;
     }
     if ( window.innerWidth < 1105 && window.innerWidth > 890) {
-        carosel_2.scrollLeft -= 400;
+        carosel_2.scrollLeft -= 280;
     }
     if ( window.innerWidth < 890 && window.innerWidth > 715) {
-        carosel_2.scrollLeft -= 340;
+        carosel_2.scrollLeft -= 280;
     }
     if ( window.innerWidth < 715) {
-        carosel_2.scrollLeft -= 430;
+        carosel_2.scrollLeft -= 280;
     }
 })
 
@@ -132,13 +132,13 @@ arrowLeft_3.addEventListener("click", () => {
         carosel_3.scrollLeft -= 280;
     }
     if ( window.innerWidth < 1105 && window.innerWidth > 890) {
-        carosel_3.scrollLeft -= 400;
+        carosel_3.scrollLeft -= 280;
     }
     if ( window.innerWidth < 890 && window.innerWidth > 715) {
-        carosel_3.scrollLeft -= 340;
+        carosel_3.scrollLeft -= 280;
     }
     if ( window.innerWidth < 715) {
-        carosel_3.scrollLeft -= 430;
+        carosel_3.scrollLeft -= 280;
     }
 })
 

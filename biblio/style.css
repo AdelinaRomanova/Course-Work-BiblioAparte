@@ -144,6 +144,9 @@ main {
 }
 
 .form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     width: 980px;
     height: 800px;
@@ -156,6 +159,8 @@ main {
 .form-container {
     display: flex;
     flex-direction: row;
+
+    width: 90%;
 }
 
 .form form .title-form {
@@ -284,6 +289,7 @@ main {
     background-color: #FFF;
 
     border: none;
+    
 }
 
 
@@ -295,6 +301,8 @@ main {
     background: #383A39;
     border-radius: 15px;
     border: none;
+
+    width: 40%;
 
     font-family: Montserrat Regular;
     font-style: normal;
@@ -312,6 +320,9 @@ main {
 }
 
 .btn-form-text {
+    
+    width: 40%;
+
     font-family: Montserrat Regular;
     font-style: normal;
     font-weight: 400;
@@ -339,7 +350,7 @@ a {
 }
 
 .form-container-middle .box{
-    width: 50%;
+    width: 600px;
 }
 
 .form-auth {
@@ -353,6 +364,10 @@ a {
 }
 
 .form-auth form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     text-align: center;
     width: 980px;
     height: 580px;
@@ -1604,7 +1619,25 @@ label {
     line-height: 57px;
 }
 
-select, input[type="number"], input {
+.form-search form input {
+    width: 500px;
+    height: 42px;
+    padding-left: 15px;
+
+    background-color: #eaeaea;
+
+    border: none;
+    border-radius: 244px;
+
+    font-family: Montserrat Regular;
+    font-size: 18px;
+
+    color: #8b8989;
+
+    outline:none;
+}
+
+select, input[type="number"] {
 
     width: 500px;
     height: 42px;
@@ -1623,7 +1656,7 @@ select, input[type="number"], input {
     outline:none;
 }
 
-input[type="submit"] {
+.form-search form input[type="submit"] {
 	margin-top: 20px;
     width: 200px;
     background-color: #C6BEA5;
@@ -1635,6 +1668,22 @@ input[type="submit"] {
     color: black;
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .collection_create .form-edit form {
+    height: 600px;
+}
+  
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
 @keyframes popup {
     100% {
         transform: scale(1.2) rotate(-45deg);
@@ -1642,6 +1691,390 @@ input[type="submit"] {
     }
 }
 
+@media (max-width: 1115px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding-left: 120px;
+        padding-right: 120px;
+      }
+
+      .header {
+        min-height: 768px;
+      }
+
+      .btn-form {
+        font-size: 15px;
+        width: 40%;
+        
+        align-items: center;
+
+        padding: 2% 3%;
+      }
+
+      .btn-form-text {
+        font-size: 14px;
+        width: 40%;
+      }
+
+      .header-box {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+      }
+      
+      .menu input[type="text"], .menu .btn_auth {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .search{
+        margin-top: 15px;
+      }
+      .btn_auth {
+        margin-top: 15px;
+      }
+
+      .form-auth form .title-form {
+        font-size: 38px;
+      }
+
+      .form form .title-form {
+        font-size: 34px;
+      }
+
+      .form-container-middle .box {
+        width: 480px;
+      }
+
+      .form-container-middle {
+        height: 200px;
+      }
+
+      .form-auth form {
+        height: 500px;
+      }
+
+      
+
+      .form-container {
+        flex-direction: column;
+        align-items: center;
+
+        width: 90%;
+    }
+    .form-container-right {
+        width: 80%;
+        height: 370px;
+    }
+
+    .form form {
+        height: 840px;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .image-preview {
+        width: 135px;
+        height: 135px;
+    }
+
+    .form form .box  {
+        font-size: 17px;
+    }
+
+    .input-file-btn {
+        font-size: 14px;
+    }
+
+    .input-file {
+        height: 50px;
+    }
+
+    .main_title {
+        font-size: 28px;
+    }
 
 
+    .services_circle_img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .services_circle_text {
+        font-size: 19px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_main_text {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .footer_main_text_description {
+        font-size: 28px;
+    }
+
+    .footer_main_text {
+        margin-bottom: 20px;
+    }
+
+    .footer_main_contacts {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .profile_inf_ava {
+        width: 280px;
+        height: 280px;
+    }
+
+    .profile_inf_ava_photo {
+        width: 230px;
+        height: 230px;
+    }
+
+    .profile_inf_name {
+        font-size: 28px;
+    }
+
+    .profile_inf_bt_edit {
+        font-size: 22px;
+    }
+
+    .review .buttons {
+        flex-direction: column;
+        align-items: baseline;
+
+        margin-top: 20px;
+    }
+
+    .review .btn-edit {
+        margin-left: 0px;
+    }
+
+    .review .remove {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .form-edit form .form-container {
+        flex-direction: column;
+    }
+
+    .form-edit form .title-form {
+        font-size: 30px;
+    }
+
+    .collection_create .form-edit form {
+        width: 400px;
+    }
+
+    .collection_create .form-edit .form-container-right {
+        width: 400px;
+    }
+
+    .collection_create .form-edit form {
+        height: 700px;
+    }
+
+    .form-edit form .input-file {
+        height: 50px;
+    }
+
+    .form-container-right-review{
+        margin-top: 30px;
+        width: 100%;
+    }
+}
+
+
+/*---медиа запросы для mobile----*/
+@media (max-width: 785px) {
+
+    
+
+    .form-edit form .form-container-right{
+        width: 90%;
+        height: 300px;
+    }
+
+    .form-edit form .title-form {
+        font-size: 25px;
+    }
+
+    .form-edit form .input-file-btn{
+        font-size: 15px;
+    }
+    .form form .title-form {
+        font-size: 25px;
+      }
+
+      .form-edit form .box {
+        font-size: 17px;
+      }
+
+    .container {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+
+
+    .form-auth form .title-form {
+        font-size: 32px;
+    }
+
+    .header_title {
+        font-size: 38px;
+    }
+
+    .form-auth form {
+        height: 420px;
+    }
+
+    .form-container-middle {
+        height: 170px;
+    }  
+
+    .form-auth form .box {
+        font-size: 17px;
+    }
+
+    .form-auth form .btn-form {
+        width: 40%;
+        font-size: 17px;
+    }
+
+    .form-auth form .btn-form-text {
+        font-size: 14px;
+    }
+
+    .btn_auth {
+        font-size: 18px;
+    }
+
+    .search input {
+        font-size: 19px;
+    }
+
+    .form-auth {
+        min-height: auto;
+    }
+
+    .btn-form {
+        font-size: 10px;
+      }
+
+      .btn-form-text {
+        font-size: 10px;
+        width: 40%;
+      }
+
+      .form-container-middle .box {
+        width: 280px;
+      }
+
+      .btn-form-text a 
+      {
+        font-size: 11px;
+      }
+
+      
+    .services_circles {
+        flex-direction: column;
+    }
+
+    .services_circle_text {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .footer_main_text {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .footer_main_text_description {
+        font-size: 20px;
+    }
+
+    .footer_main_text {
+        margin-bottom: 20px;
+    }
+
+    .footer_main_contacts_text {
+        font-size: 20px;
+    }
+
+    .footer_main_contacts {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .review .book_information_name {
+        font-size: 22px;
+    }
+
+    .review .book_review_text p {
+        font-size: 17px;
+    }
+
+    .list_book_img {
+        width: 173px;
+        height: 240px;
+    }
+
+    .review .btn-edit {
+        font-size: 14px;
+        width: 170px;
+        height: 30px;
+    }
+
+    .review .remove {
+        font-size: 14px;
+        height: 30px;
+        width: 120px;
+    }
+
+    .add_book_col {
+        font-size: 17px;
+    }
+
+    .collections .list_book {
+        width: 173px;
+    }
+    .form-container-right-review{
+        margin-top: 30px;
+        width: 100%;
+    }
+    
+    .review{
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-search form{
+        width: 250px;
+    }
+
+    .form-search form input {
+        width: 250px;
+    }
+
+    select, input[type="number"] {
+        width: 250px;
+    }
+}
 
