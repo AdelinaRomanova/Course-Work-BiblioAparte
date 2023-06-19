@@ -648,6 +648,23 @@ a {
     margin-right: 15px;
 }
     
+.error {
+    border-color: red !important;
+  }
+  
+  .error-message {
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+    color: red;
+  }
+  
+  .error-container {
+    display: none;
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+  }
 
 .heart::before{
     position: absolute;

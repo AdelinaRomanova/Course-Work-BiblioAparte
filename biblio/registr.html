@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/sweetalert2@10.16.6/dist/sweetalert2.min.css">
+    <script src="https://unpkg.com/sweetalert2@10.16.6/dist/sweetalert2.all.min.js" defer></script>
+    <script src="js/registrationForm.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Библио Апарте</title>
 </head>
 <body>
@@ -24,7 +28,7 @@
 
     <main class="container">
         <div class="form">
-            <form action="" method="post" enctype="multipart/form-data">
+            <form action="" method="post" id="registrForm" enctype="multipart/form-data">
                 <h1 class="title-form">Регистрация</h1>
                 <div class="form-container">
 
@@ -32,18 +36,18 @@
 
                         <img id="frame" src="" class="image-preview"/>
                         <label class="input-file">
-                            <input type="file" id="file" name="file" accept="image/jpg, image/jpeg, image/png" onchange="preview()">
+                            <input type="file" id="avatar" name="avatar" accept="image/jpg, image/jpeg, image/png" onchange="preview()">
                             <span class="input-file-btn">Выбрать изображение</span> 
                         </label>
 
                     </div>
 
                     <div class="form-container-right">
-                        <input type="text" name="name" placeholder="Введите никнейм" class="box" required>
-                        <input type="date" name="name" placeholder="Введите дату рождения" class="box" required>
-                        <input type="email" name="email" placeholder="Введите E-mail" class="box" required>
-                        <input type="password" name="password" placeholder="Введите пароль" class="box" required>
-                        <input type="password" name="сpassword" placeholder="Повторите пароль" class="box" required>
+                        <input type="text" name="nickname" id="nickname" placeholder="Введите никнейм" class="box">
+                        <input type="date" name="date" id="date" placeholder="Введите дату рождения" class="box">
+                        <input type="email" name="email" id="email" placeholder="Введите E-mail" class="box">
+                        <input type="password" name="password" id="password" placeholder="Введите пароль" class="box">
+                        <input type="password" name="сpassword" id="cpassword" placeholder="Повторите пароль" class="box">
                     </div>
                 </div>
 
@@ -72,6 +76,5 @@
             
         </div>
     </footer>
-
 </body>
 </html>
